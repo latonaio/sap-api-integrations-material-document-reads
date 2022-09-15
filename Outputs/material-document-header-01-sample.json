@@ -1,0 +1,21 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-material-document-reads/SAP_API_Caller/caller.go#L60",
+	"function": "sap-api-integrations-material-document-reads/SAP_API_Caller.(*SAPAPICaller).Header",
+	"level": "INFO",
+	"message": [
+		{
+			"MaterialDocumentYear": "1998",
+			"MaterialDocument": "4900000011",
+			"InventoryTransactionType": "WL",
+			"DocumentDate": "2022-09-14",
+			"PostingDate": "1998-02-01",
+			"CreationDate": "2022-09-15",
+			"CreationTime": "01:56:29",
+			"MaterialDocumentHeaderText": "",
+			"ReferenceDocument": "0080000001",
+			"GoodsMovementCode": "",
+			"to_MaterialDocumentItem": "http://100.21.57.120:8080/sap/opu/odata/sap/API_MATERIAL_DOCUMENT_SRV/A_MaterialDocumentHeader(MaterialDocumentYear='1998',MaterialDocument='4900000011')/to_MaterialDocumentItem"
+		}
+	],
+	"time": "2022-09-15T22:36:27+09:00"
+}
