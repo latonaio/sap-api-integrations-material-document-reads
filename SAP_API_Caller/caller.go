@@ -55,16 +55,17 @@ func (c *SAPAPICaller) Header(materialDocumentYear, materialDocument string) {
 	headerData, err := c.callMaterialDocumentSrvAPIRequirementHeader("A_MaterialDocumentHeader", materialDocumentYear, materialDocument)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(headerData)
 	}
-	c.log.Info(headerData)
 
 	itemData, err := c.callToItem(headerData[0].ToItem)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(itemData)
 	}
-	c.log.Info(itemData)
+	return
 }
 
 func (c *SAPAPICaller) callMaterialDocumentSrvAPIRequirementHeader(api, materialDocumentYear, materialDocument string) ([]sap_api_output_formatter.Header, error) {
